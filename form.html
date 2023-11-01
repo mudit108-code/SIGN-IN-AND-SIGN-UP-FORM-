@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>DOCUMENT</title>
+        <link rel="stylesheet" href="form.css"/>
+    </head>
+    <body>
+        <div class="card login" id="login">
+            <h2><i class="fas fa-key"></i>SIGN IN</h2>
+            <form action="">
+                <div class="form-group">
+                    <label for="email">EMAIL:</label>
+                    <input name="email" type="text"/>
+                </div>
+                <div class="form-group">
+                    <label for="password"> PASSWORD:</label>
+                    <input name="password" type="password"/>
+                </div>
+                <button type="submit"> SIGN IN</button>
+            </form>
+            <p class="link-login">
+                DONT HAVE AN ACCOUNR YET ?
+                <span class="switchText" onclick="switchToSignUp()"> SIGN UP !</span>
+            </p>
+        </div>
+        <div class="card signup" id="signup">
+            <h2><i class="fas fa-user"></i> NEW ACCOUNT</h2>
+            <form action="">
+                <div class="form-group">
+                    <label for="email"> EMAIL:</label>
+                    <input name="email" type="text"/>
+                </div>
+                <div class="form-group">
+                    <label for="password"> PASSWORD:</label>
+                    <input name="password" type="password"/>
+                </div>
+                <div class="form-group">
+                    <label for="password-repeat">PASSWORD REPEAT:</label>
+                    <input name="password-repeat" type="password"/>
+                </div>
+                <button type="submit"> CREATE</button>
+            </form>
+            <p class="link-signUp">
+                ALREADY HAD AN ACCOUNT !
+                <span class="switchText" onclick="switchToLogin()"> SIGN IN !</span>
+            </p>
+        </div>
+        <script src="form.js"></script>
+    </body>
+    </html>
+    
+
